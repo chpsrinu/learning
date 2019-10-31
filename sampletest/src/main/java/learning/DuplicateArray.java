@@ -1,5 +1,8 @@
 package learning;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class DuplicateArray {
 
 	public static void main(String[] args) {
@@ -17,5 +20,7 @@ public class DuplicateArray {
 				System.out.println(Math.abs(array[i])+ " is a repetation.");
 			}
 		}
+		Set<Integer> set = new HashSet<>();
+		set.contains(1);
 	}
 }

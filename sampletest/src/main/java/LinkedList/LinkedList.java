@@ -22,6 +22,7 @@ public class LinkedList<T extends  Comparable<T>> implements List<T> {
 		newNode.setNextNode(root);
 		this.root = newNode;
 	}
+	
 	//O(n)
 	private void insertDataAtEnd(T data, Node node) {
 		if (node.getNextNode() != null) {
