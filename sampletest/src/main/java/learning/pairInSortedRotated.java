@@ -3,7 +3,7 @@ package learning;
 public class pairInSortedRotated {
 	public static void main(String[] args) {
 		int[] arr = {11, 15, 6, 8, 9, 10};
-		System.out.println(pairInSortedRotated(arr, 16));
+		System.out.println(pairInSortedRotated(arr, arr.length, 16));
 	}
 	//{11, 15, 6, 8, 9, 10}
 	public static int pairInSortedRotated(int[] arr, int total) {

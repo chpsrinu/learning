@@ -6,6 +6,6 @@ public class App {
 		StringOperations str = new StringOperations();
 //		System.out.println(str.revertString("Pydi"));
 //		str.getSuffixes("hello").forEach(list->System.out.println(list));
-		System.out.println(str.longestRepeatedSubstring("hellohehehhello"));
+		System.out.println(str.longestRepeatedSubstring("banana"));
 	}
 }

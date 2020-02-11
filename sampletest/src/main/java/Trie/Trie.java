@@ -29,6 +29,24 @@ public class Trie {
 		}
 		tempNode.setLeaf(true);
 	}
+	
+	public void insert(String word) {
+
+		Node tempNode = root;
+		for (int i = 0; i < word.length(); i++) {
+			char c = word.charAt(i);
+			int asciiIndex = c - 'a';
+
+			if (tempNode.getChild(asciiIndex) == null) {
+				Node node = new Node(String.valueOf(c));
+				tempNode.setChild(asciiIndex, node);
+				tempNode = node;
+			} else {
+				tempNode = tempNode.getChild(asciiIndex);
+			}
+		}
+		tempNode.setLeaf(true);
+	}
 
 	public Integer searchAsMap(String word) {
 
@@ -49,6 +67,7 @@ public class Trie {
 		return tempNode.getValue();
 	}
 
+	//O(m)
 	public boolean search(String word) {
 
 		Node tempNode = root;

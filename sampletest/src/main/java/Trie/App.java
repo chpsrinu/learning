@@ -12,6 +12,7 @@ public class App {
 //		trie.insert("hello");
 		
 		trie.insert("ada", 1);
+		trie.insert("dda", 5);
 		trie.insert("addaa", 2);
 		trie.insert("addddddd", 3);
 //		trie.insert("swathi", 4);

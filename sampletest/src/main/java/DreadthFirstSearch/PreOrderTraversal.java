@@ -14,7 +14,7 @@ public class PreOrderTraversal {
 		bt.root.right.right = new BinaryTree.TreeNode("F");
 		
 		System.out.println("printing nodes of a binary tree in preOrder using recursion");
-		bt.preOrder(bt.root.left);
+		bt.preOrder(bt.root);
 	}
 }
 

@@ -11,7 +11,11 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		
+		System.out.println(sampleEnum.WhoisRIR.AFRINIC.url());
 		
+		String[] str = "a##c".split("#");
+		System.out.println("a##c".indexOf('#'));
+		Arrays.stream(str).forEach(System.out::println);
 //		System.out.println("Hello!!!");
 //		List<String> l1 = new ArrayList<String>();
 //		List<String> l2 = new ArrayList<>();
@@ -62,11 +66,20 @@ public class HelloWorld {
 //		ss.set(0, 6);
 //		System.out.println(ss.get(0, 0));
 		String test = "pydi";
-		int[] A = {1, 12, 42, 70, 36 , -1, 43, 15};
-		int[] B = {5, 15, 44, 72, 36, 2, 69, 24};
-		//int[] T = {2, -3,3,1,10,8,2,5,13,-5,3,-18};
-		int[] T = {2,1,1,10,2,13,3,-8};
-		System.out.println(solution(T));
+//		int[] A = {1, 12, 42, 70, 36 , -1, 43, 15};
+//		int[] B = {5, 15, 44, 72, 36, 2, 69, 24};
+//		//int[] T = {2, -3,3,1,10,8,2,5,13,-5,3,-18};
+//		int[] T = {2,1,1,10,2,13,3,-8};
+//		System.out.println(solution(T));
+		StringBuffer sb = new StringBuffer();
+		int k = 3;
+		String s = "abc";
+        for (int i =0;i<s.length();i++) {
+            int charInt = s.charAt(i);
+            char c = (char) (charInt+k);
+            sb.append(c);
+        }
+        System.out.println(sb.toString());
 	}
 	public static int solution(int[] A, int[] B) {
 		int counter =0;

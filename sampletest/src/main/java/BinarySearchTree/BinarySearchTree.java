@@ -18,6 +18,14 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 			inOrderTraversal(root);
 		}
 	}
+	
+	private void postOrderTraversal(Node<T> node) {
+		if (node == null)
+			return;
+		postOrderTraversal(node.getLeftChild());
+		postOrderTraversal(node.getRightChild());
+		System.out.println(node.getData());
+	}
 
 	
 	private void inOrderTraversal(Node<T> node) {
@@ -177,6 +185,21 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 		
 		sum = ((Person)node.getData()).getAge()+leftSum+rightSum;
 		return sum;
+	}
+	
+	public int height(Node<T> node) {
+		if (node == null) return 0;
+		else {
+//			int lDepth = height(node.getLeftChild());
+//			int rDepth = height(node.getRightChild());
+//			
+//			if (lDepth > rDepth) 
+//				return (lDepth+1);
+//			else 
+//				return (rDepth+1);
+			return 1+Math.max(height(node.getLeftChild()), height(node.getRightChild()));
+		}
+		
 	}
 
 }

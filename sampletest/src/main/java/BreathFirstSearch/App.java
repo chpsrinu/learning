@@ -17,7 +17,7 @@ public class App {
 		vertex4.addNeighbourVertex(vertex5);
 		vertex2.addNeighbourVertex(vertex3);
 		
-		bfs.bfs(vertex2);
+		bfs.bfs(vertex1);
 	}
 
 }

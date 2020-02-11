@@ -1,7 +1,5 @@
 package learning;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
-
 public class LinearAndBinarySearch {
 
 	private int[] array;

@@ -18,6 +18,10 @@ public class Node {
 		this.children[index] = node;
 	}
 	
+	public void setChild(int index, Node node) {
+		this.children[index] = node;
+	}
+	
 	@Override
 	public String toString() {
 		return this.character;

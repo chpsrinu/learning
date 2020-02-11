@@ -4,6 +4,7 @@ public class BruteForceSearch {
 	public static void main(String[] args) {
 		System.out.println(search("this is a text", "text"));
 	}
+	//O(m*(n-m+1))
 	public static int search(String text, String pattern) {
 		int lengthOfText = text.length();
 		int lengthOfPattern = pattern.length();

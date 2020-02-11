@@ -23,7 +23,7 @@ public class BoyerMoore {
 			this.mismatchShiftTable.put(actualChar, maxShift);
 		}
 	}
-	
+	//O(mn)
 	public int search() {
 		int lengthOfPattern = this.pattern.length();
 		int lengthOfText = this.text.length();
