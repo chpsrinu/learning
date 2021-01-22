@@ -29,6 +29,7 @@ public class CountTriplets {
 		arr.add(2L);
 		arr.add(2L);
 		arr.add(4L);
+		arr.add(2L);
 		System.out.println(countTriplets(arr, 2));
 	}
 }

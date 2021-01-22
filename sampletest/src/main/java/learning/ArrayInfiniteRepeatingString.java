@@ -11,7 +11,7 @@ public class ArrayInfiniteRepeatingString {
         int count = 0;
         //int pointer = s.length();
         for (char c: s.toCharArray()) {
-            if(c=='a') {
+            if(c=='b') {
                 count++;
             }
         }
@@ -23,7 +23,7 @@ public class ArrayInfiniteRepeatingString {
         }
         if (modCount > 0) {
             for (int i =0;i<modCount;i++) {
-                if (s.charAt(i)=='a') {
+                if (s.charAt(i)=='b') {
                     count++;
                 }
             }

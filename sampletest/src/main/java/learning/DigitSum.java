@@ -25,6 +25,6 @@ public class DigitSum {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(superDigit("123", 2));
+		System.out.println(superDigit("123", 4));
 	}
 }

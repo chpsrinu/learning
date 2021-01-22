@@ -26,8 +26,8 @@ public class MaxStack {
 		}
 		
 		static void pop() {
-			mainStack.pop();
-			trackStack.pop();
+			System.out.println(mainStack.pop());
+			System.out.println(trackStack.pop());
 		}
 	}
 	public static void main(String[] args) {

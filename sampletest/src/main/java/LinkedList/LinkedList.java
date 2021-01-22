@@ -133,5 +133,61 @@ public class LinkedList<T extends  Comparable<T>> implements List<T> {
 		}
 		return false;
 	}
+	//detectcycle II
+	public Node detectCycle(Node head) {
+		Node slow = head, fast = head;
+		while(fast != null && fast.getNextNode() != null) {
+			fast = fast.getNextNode().getNextNode();
+			slow = slow.getNextNode();
+			if (slow == fast) {
+				while (head != slow) {
+					head = head.getNextNode();
+					slow = slow.getNextNode();
+				}
+				return slow;				
+			}
+		}			
+		return null;
+	}
+	
+	//Nth Node From end list
+	public Node removeNthFromEnd(Node head, int n) {
+		Node dummy = new Node(0);
+		dummy.setNextNode(head);
+		Node first =dummy, second=dummy;
+		for(int i=1;i<=n+1;i++) {
+			first = first.getNextNode();
+		}
+		while(first!=null) {
+			second = second.getNextNode();
+			first = first.getNextNode();
+		}
+		second.setNextNode(second.getNextNode().getNextNode());
+		return dummy.getNextNode();
+	}
+	
+	//merge two sorted lists
+	public Node megeTwoLists(Node l1, Node l2) {
+		Node head = new Node(0);
+		Node p=head;
+		
+		Node p1=l1;
+		Node p2=l2;
+		while(p1!=null && p2!=null) {
+			if(p1.getData() < p2.getData()) {
+				p.setNextNode(p1);
+				p1 = p1.getNextNode();
+			} else {
+				p.setNextNode(p2);
+				p2 = p2.getNextNode();
+			}
+			p=p.getNextNode();
+		}
+		if(p1!=null)
+			p.setNextNode(p1);;
+		if(p2!=null)
+			p.setNextNode(p2);
+		return head.getNextNode();
+	}
 
 }

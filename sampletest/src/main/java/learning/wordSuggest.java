@@ -13,7 +13,13 @@ public class wordSuggest {
 		list.add("banner");
 		list.add("bagge");
 		list.add("baaaaa");
-		sug.maxThreeSuggestion(5, list, "12");
+		List<List<String>> res = sug.maxThreeSuggestion(2, list, "ba");
+		for(List<String> res1 : res) {
+			for(String res2 : res1) {
+				System.out.println(res2);
+			}
+			System.out.println("next suggestion list :");
+		}
 	}
 	class TrieNode {
 		char c;
@@ -38,10 +44,10 @@ public class wordSuggest {
 		}
 
 		List<List<String>> out = new ArrayList<>();
-		for (int i = 2; i <= input.length(); i++) {
+		for (int i = 1; i <= input.length(); i++) {
 			TrieNode t = searchNode(input.substring(0, i));
 			if (t != null) {
-				out.add(t.suggestionSet.stream().limit(3).collect(Collectors.toList()));
+				out.add(t.suggestionSet.stream().limit(numProducts).collect(Collectors.toList()));
 			}
 		}
 		return out;

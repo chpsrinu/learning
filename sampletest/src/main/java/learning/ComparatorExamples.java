@@ -13,9 +13,10 @@ public class ComparatorExamples {
 		SortedMap<Integer, String> sort = new TreeMap<>(Collections.reverseOrder());
 		sort.put(1, "one");
 		sort.put(2, "two");
+		sort.put(5, "five");
 		sort.put(3, "three");
 		sort.put(4, "four");
-		sort.put(5, "five");
+		
 		
 		System.out.println("sorted map : " + sort);
 		

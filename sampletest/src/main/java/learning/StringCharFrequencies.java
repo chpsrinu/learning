@@ -54,7 +54,7 @@ public class StringCharFrequencies {
 
     }
 	public static void main(String[] args) {
-		System.out.println(isValid("aaaabbccccdddd"));
+		System.out.println(isValid("aaaabb"));
 	}
 	
 }

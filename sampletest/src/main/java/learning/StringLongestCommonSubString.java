@@ -26,6 +26,7 @@ public class StringLongestCommonSubString {
 		return max;
 	}
 	public static void main(String[] args) {
-		System.out.println(getLogestCommonSubString("SHINCHAN", "NOHARAAA"));
+		//System.out.println(getLogestCommonSubString("SHINCHAN", "NOHARAAA"));
+		System.out.println(getLogestCommonSubString("abcde", "abcxxx"));
 	}
 }

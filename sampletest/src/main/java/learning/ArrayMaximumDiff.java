@@ -5,7 +5,7 @@ import javax.management.RuntimeErrorException;
 public class ArrayMaximumDiff {
 
 	public static void main(String[] args) {
-		int arr[] = {1, 2, 90, 10, 110};
+		int arr[] = {110, 2, 90, 10, 1};
 		System.out.println(maxDiff2(arr));
 	}
 	

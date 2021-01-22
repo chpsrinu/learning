@@ -8,7 +8,7 @@ import java.util.LinkedList;
 public class CourseScheduleImpl {
 
 	public static void main(String[] args) {
-		int[][] arr = {{1,0}};
+		int[][] arr = {{1,0},{0,1}};
 		System.out.println(canFinish(2 , arr));
 	}
 	//solution - 1 BFS

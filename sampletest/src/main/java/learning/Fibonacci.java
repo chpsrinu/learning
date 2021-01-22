@@ -3,7 +3,7 @@ package learning;
 public class Fibonacci {
 
 	public static void main(String[] args) {
-		System.out.println("recursive : " + recursive(3));
+		System.out.println("recursive : " + recursive(5));
 		System.out.println("memo : " + memo(5, new int[5]));
 		
 	}

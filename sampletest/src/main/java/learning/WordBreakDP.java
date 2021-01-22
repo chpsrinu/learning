@@ -22,11 +22,17 @@ public class WordBreakDP {
 		String temp_dictionary[] = {"mobile","samsung","sam","sung",  
                 "man","mango","icecream","and",  
                 "go","i","like","ice","cream"};
-		for (String word: temp_dictionary) {
+//		for (String word: temp_dictionary) {
+//			dictionary.add(word);
+//		}
+//		System.out.println(wordBreakDP("ilikeicecream"));
+		
+		String temp_dictionary2[] = {"a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"};
+		for (String word: temp_dictionary2) {
 			dictionary.add(word);
 		}
 		
-		System.out.println(wordBreakDP("ilikeicecream"));
+		System.out.println(wordBreakDP("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"));
 		
 	}
 }

@@ -5,7 +5,7 @@ import BinarySearchTree.BinarySearchTree;
 public class SearchSortedArray {
 	
 	public static void main(String[] args) {
-		int[] arr1={3,5, 6, 7, 8, 9, 10, 1, 2, 3};
+		int[] arr1={3,5, 6, 7, 8, 9, 10, 1, 2};
 		int n = arr1.length;
 		int key = 3;
 		System.out.println(pivotedBinarySearch(arr1, n, key));

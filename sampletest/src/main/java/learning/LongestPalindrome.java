@@ -1,7 +1,7 @@
 package learning;
 
 public class LongestPalindrome {
-
+//T:O(n^2) S:O(1)
 	public static void main(String[] args) {
 		System.out.println(longestPalindrome("babad"));
 	}

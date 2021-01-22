@@ -21,7 +21,7 @@ public class HotelBooking {
 	}
 	
 	public static boolean hotelBooking(List<Integer> arrivals, List<Integer> departures, int k) {
-		Map<Integer, Integer> map = new HashMap<>();
+		Map<Integer, Integer> map = new TreeMap<>();
 		//if(arrivals.size() != departures.size()) return false;
 		
 		for (int i=0;i<arrivals.size();i++) {
@@ -36,9 +36,9 @@ public class HotelBooking {
 		}
 		
 		//sort map
-		Map<Integer, Integer> sortedEvents = new TreeMap<>(map);
+		//Map<Integer, Integer> sortedEvents = new TreeMap<>(map);
 		int count = 0;
-		for(Map.Entry<Integer, Integer> entry : sortedEvents.entrySet()) {
+		for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
 			count += entry.getValue();
 			
 			while(count > k) {

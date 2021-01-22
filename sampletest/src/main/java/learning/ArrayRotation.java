@@ -6,7 +6,7 @@ public class ArrayRotation {
 
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5};
-		rotate(arr, 2);
+		rotateR(arr, 2);
 		Arrays.stream(arr).forEach(System.out::println);
 	}
 	
@@ -25,4 +25,18 @@ public class ArrayRotation {
 		}
 		arr[arr.length-1] = temp;
 	}
+	
+	public static void rotateR(int[] nums, int k) {
+        if(nums.length==0||nums.length==1) return ;
+        for(int i=0;i<k;i++) {
+            rotateRight(nums);
+        }
+    }
+    private static void rotateRight(int[] nums) {
+        int num = nums[nums.length-1];
+        for(int j=nums.length-2;j>=0;j--) {
+            nums[j+1]=nums[j];
+        }
+        nums[0]=num;
+    }
 }

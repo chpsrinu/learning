@@ -11,7 +11,7 @@ public class ArrayFindNonPair {
 		int last = nums.length;
 		while (start<last) {
 			int mid = (start+last)/2;
-			if (nums[mid-1] != nums[mid] && nums[mid+1] != nums[mid]) return nums[mid];
+			if (nums[mid-1] != nums[mid] || nums[mid+1] != nums[mid]) return nums[mid];
 			if((last-mid+1)%2 != 0)
 				start = mid+1;
 			else
